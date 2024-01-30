@@ -2,7 +2,6 @@
 #include<stdio.h>
 int main()
 {
-    Printf ("My name is Lakshminarayan");
-    Scanf ("&,%d");
+    Printf("My name is Lakshminarayan");
     return 0;
 }
