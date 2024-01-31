@@ -1,0 +1,29 @@
+ gdb .\problem03.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\HP\Documents\c-activity-sets\set01\problem03.exe...done.
+(gdb) b output
+Breakpoint 1 at 0x4014f8: file .\problem03.c, line 27.
+(gdb) r
+Starting program: C:\Users\HP\Documents\c-activity-sets\set01/.\problem03.exe 
+[New Thread 9972.0xa70]
+[New Thread 9972.0x4ee0]
+[New Thread 9972.0x60f8]
+[New Thread 9972.0x32f4]
+Enter a number: 7
+Enter a number: 5
+
+Breakpoint 1, output (a=7, b=5, sum=12) at .\problem03.c:27
+27          printf("Sum of %d and %d is: %d\n", a, b, sum);
+(gdb) c
+Continuing.
+Sum of 7 and 5 is: 12
+[Inferior 1 (process 9972) exited normally]
+(gdb) q
