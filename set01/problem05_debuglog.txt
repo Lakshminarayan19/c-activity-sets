@@ -1,0 +1,30 @@
+gdb .\problem05.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\HP\Documents\c-activity-sets\set01\problem05.exe...done.
+(gdb) b output
+Breakpoint 1 at 0x401536: file .\problem05.c, line 32.
+(gdb) r
+Starting program: C:\Users\HP\Documents\c-activity-sets\set01/.\problem05.exe
+[New Thread 19048.0x374c]
+[New Thread 19048.0x73fc]
+[New Thread 19048.0x17a4]
+[New Thread 19048.0x70f0]
+Enter a number: 5
+Enter a number: 6
+Enter a number: 7
+
+Breakpoint 1, output (a=5, b=6, c=7, largest=7) at .\problem05.c:32
+32          printf("Among %d, %d, and %d, the largest number is: %d\n", a, b, c, largest);
+(gdb) c
+Continuing.
+Among 5, 6, and 7, the largest number is: 7
+[Inferior 1 (process 19048) exited normally]
+(gdb) q
