@@ -1,0 +1,30 @@
+PS C:\Users\HP\Documents\c-activity-sets\set01> gdb .\problem01a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\HP\Documents\c-activity-sets\set01\problem01a.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40146e: file .\problem01.c, line 5.
+(gdb) r
+Starting program: C:\Users\HP\Documents\c-activity-sets\set01/.\problem01a.exe 
+[New Thread 1356.0x1a90]
+[New Thread 1356.0x60a8]
+[New Thread 1356.0x1d90]
+[New Thread 1356.0x5788]
+
+Breakpoint 1, main () at .\problem01.c:5
+5           printf("My name is Lakshminarayan");
+(gdb) n
+My name is Lakshminarayan6          return 0;
+(gdb) c
+Continuing.
+[Inferior 1 (process 1356) exited normally]
+(gdb) f
+No stack.
+(gdb)
