@@ -1,0 +1,45 @@
+gdb .\problem07.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\HP\Documents\c-activity-sets\set01\problem07.exe...done.
+(gdb) b output
+Breakpoint 1 at 0x4014bd: file .\problem07.c, line 20.
+(gdb) r
+Starting program: C:\Users\HP\Documents\c-activity-sets\set01/.\problem07.exe 
+[New Thread 9528.0x5638]
+[New Thread 9528.0x874]
+[New Thread 9528.0x374c]
+[New Thread 9528.0x48cc]
+Enter a positive integer n: 1
+
+Breakpoint 1, output (n=1, sum=1) at .\problem07.c:20
+20          printf("The sum of all natural numbers from 1 to %d is %d\n", n, sum);
+(gdb) c
+Continuing.
+The sum of all natural numbers from 1 to 1 is 1
+[Inferior 1 (process 9528) exited normally]
+(gdb) b output
+Note: breakpoint 1 also set at pc 0x4014bd.
+Breakpoint 2 at 0x4014bd: file .\problem07.c, line 20.
+(gdb) r
+Starting program: C:\Users\HP\Documents\c-activity-sets\set01/.\problem07.exe 
+[New Thread 5584.0x6300]
+[New Thread 5584.0x5538]
+[New Thread 5584.0x4e6c]
+[New Thread 5584.0x15c8]
+Enter a positive integer n: 7
+
+Breakpoint 1, output (n=7, sum=28) at .\problem07.c:20
+20          printf("The sum of all natural numbers from 1 to %d is %d\n", n, sum);
+(gdb) c
+Continuing.
+The sum of all natural numbers from 1 to 7 is 28
+[Inferior 1 (process 5584) exited normally]
+(gdb) q
