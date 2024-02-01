@@ -1,0 +1,31 @@
+gdb .\problem11.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\HP\Documents\c-activity-sets\set01\problem11.exe...done.
+(gdb) b output
+Breakpoint 1 at 0x4014d9: file .\problem11.c, line 27.
+(gdb) r
+Starting program: C:\Users\HP\Documents\c-activity-sets\set01/.\problem11.exe 
+[New Thread 12076.0x65c4]
+[New Thread 12076.0x760c]
+[New Thread 12076.0x6fa4]
+[New Thread 12076.0x274c]
+Enter the first complex number:
+Enter real part: 2+3
+Enter imaginary part: Enter the second complex number:
+Enter real part: 2i+3
+Enter imaginary part:
+Breakpoint 1, output (a=..., b=..., sum=...) at .\problem11.c:27
+27                 a.real, a.imaginary, b.real, b.imaginary, sum.real, sum.imaginary);
+(gdb) c
+Continuing.
+Sum of (2.00 + 3.00i) and (2.00 + 288872998682233670000000000000000.00i) is: 4.00 + 288872998682233670000000000000000.00i  
+[Inferior 1 (process 12076) exited normally]
+(gdb) q
