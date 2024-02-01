@@ -1,0 +1,27 @@
+gdb .\problem09.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\HP\Documents\c-activity-sets\set01\problem09.exe...done.
+(gdb) b output
+Breakpoint 1 at 0x4014e5: file .\problem09.c, line 26.
+(gdb) r
+Starting program: C:\Users\HP\Documents\c-activity-sets\set01/.\problem09.exe 
+[New Thread 3068.0x3920]
+[New Thread 3068.0x4244]
+[New Thread 3068.0x4fc0]
+[New Thread 3068.0x1fdc]
+Enter the number5
+
+Breakpoint 1, output (n=5, sqrroot=2) at .\problem09.c:26
+26          printf("the sqr root of %.1f is %.1f",n,sqrroot);
+(gdb) c
+Continuing.
+the sqr root of 5.0 is 2.0[Inferior 1 (process 3068) exited normally]
+(gdb) q
