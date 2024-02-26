@@ -20,7 +20,6 @@ int main() {
     return 0;
 }
 
-
 int input_number() {
     int n;
     printf("Enter a number: ");
